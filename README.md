@@ -24,4 +24,4 @@ To run the application locally
 - run pip install -r requirements.txt to install all the dependencies 
 - run the application with python app.py 
 
-Credit- ali moez [Pycaret crerator](https://github.com/pycaret/pycaret-demo-dphi)
+Credit- ali moez [Pycaret creator](https://github.com/pycaret/pycaret-demo-dphi)

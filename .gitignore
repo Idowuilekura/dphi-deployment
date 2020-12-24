@@ -1,0 +1,11 @@
+server.py
+idowuvenv/
+server/
+*.pyc
+__pycache__
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+static/

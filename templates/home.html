@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Loan Approval</title>
+  <style>
+    body{
+      background-image: url_for('loan.jpg');
+    }
+  </style>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Loan Approval</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Gender" placeholder="gender" required="required" />
+        <input type="text" name="Married" placeholder="are you married?" required="required" />
+         <br><br>
+        <input type="text" name="Dependents" placeholder="Number of dependents" required="required" />
+          <input type="text" name="Education" placeholder="educational level" required="required"/>
+          <br><br>
+        <input type="text" name="Self_Employed" placeholder="self employed" required="required" />
+          <input type="text" name="ApplicantIncome" placeholder="applicant income" required="required" />
+          <br><br>
+        <input type="text" name="CoapplicantIncome" placeholder="coapplicant income" required="required"/>
+          <input type="text" name="LoanAmount" placeholder="loan_amount" required="required" />
+          <br><br>
+          <input type='text' name='Loan_Amount_Term' placeholder="loan_amount_term" required="required" />
+            <input type="text" name="Credit_History" placeholder="Credit_History" required="required" />
+            <br><br>
+        <input type="text" name="Property_Area" placeholder="property_area" required="required" />
+        <br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+
+  <br>
+   <br>
+
+  </div>
+ {{pred}}
+
+</body>
+</html>
